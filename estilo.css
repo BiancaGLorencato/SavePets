@@ -1,0 +1,23 @@
+
+
+
+body {
+	 background: url('imagens/28.jpg') no-repeat center top fixed;
+    -webkit-background-size: cover;
+    -moz-background-siz position: fixed; /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative; /* criamos um contexto para posicionamento */
+   
+		}
+#texto{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:justify;
+	width:50%;
+	font-size:20px;
+	
+	}

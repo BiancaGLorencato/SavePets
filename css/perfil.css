@@ -1,0 +1,83 @@
+
+.da-thumbs li {
+	float: left;
+	margin: 5px;
+	background: #fff;
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.da-thumbs li ,
+.da-thumbs li  img {
+	display: block;
+	position: relative;
+	height:200px;
+	width:250px;
+}
+.da-thumbs li  {
+	overflow: hidden;
+}
+.da-thumbs li  div {
+	position: absolute;
+	background: #333;
+	background: rgba(75,75,75,0.7);
+	width: 100%;
+	height: 100%;
+}
+
+
+.da-thumbs li div span {
+	display: block;
+	margin: 75px 75px 75px 55px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.9);
+	}
+.animais{
+	
+       border: 1px solid gray;
+		margin-top:0;
+		margin-right:92px;
+		margin-bottom:10px;
+		margin-left:92px;
+		border-radius: 20px;
+		overflow: hidden;
+}
+	
+
+	
+	
+
+
+	@media (min-width: 768px) and (max-width: 1199px) { 
+
+  #da-thumbs {
+
+    column-count: 3;
+
+  }  
+	}
+@media (max-width: 767px) { 
+  #da-thumbs {
+    column-count: 1;
+
+  }
+  
+}
+
+    @media only screen and (max-width: 400px) {
+    .mobile{ display: inline !important; }
+	.animais{
+		 border: 0;
+		margin:0;
+	border-radius: 0;
+	}
+    }
+    @media only screen and (min-width: 500px) {
+    .desktop-hide{ display: none !important; }
+    }
+	
+	@media only screen and (max-width: 400px) {
+    .mobil{ display: inline !important; }
+    }
+    @media only screen and (min-width: 500px) {
+    .desk-hide{ display: none !important; }
+    }

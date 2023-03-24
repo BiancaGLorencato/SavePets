@@ -1,0 +1,15 @@
+.corpos{
+	background-image: url(imagens/08.jpg);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	width:100%;
+}
+
+.contain{
+	max-width:330px;
+	padding:15px;
+	margin: 0, auto;
+}

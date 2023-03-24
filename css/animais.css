@@ -1,0 +1,145 @@
+.rb-grid {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.rb-grid li {
+	
+	display: block;
+	float: left;
+	padding: 1.6em;
+	cursor: pointer;
+	position: relative;
+	margin: 5px;
+	
+}
+.rb-grid li ,
+.rb-grid li  img {
+    display:block;
+	position: relative;
+	height:200px;
+	width:250px;
+}
+
+.rb-grid li.rb-span-2 {
+	width: 49%;
+}
+
+.rb-grid li.rb-span-4 {
+	width: 99%;
+}
+
+
+.rb-temp {
+	display: block;
+	font-size: 1em;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	transition: opacity 0.2s ease-in-out;
+}
+
+.rb-grid li:hover .rb-temp {
+	opacity: 1;
+}
+
+.rb-overlay {
+	opacity: 0;
+	position: fixed;
+	top: 51px;
+	left: 0;
+	width: 100%;
+	height: 100%; 
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	z-index: -1;
+	pointer-events: none;
+	cursor: default;
+	background: #E8E9EA;
+	text-align: center;
+	padding-left:30px;	
+	padding-right:30px;		
+
+}
+
+.rb-close {
+	position: fixed;
+	width: 1em;
+	height: 1em;
+	text-indent: -9000px;
+	cursor: pointer;
+	z-index: 1000;
+	
+}
+
+.rb-close::before {
+
+	content: 'x';
+	font-weight: 100;
+	position: absolute;
+	top: 25px;
+	left: 510px;
+	width: 100%;
+	height: 100%;
+	font-size: 3em;
+	line-height: 0.6;
+	text-indent: 0px;
+	
+}
+
+
+@media screen and (max-width: 63.125em) {
+	
+	.rb-grid li,
+	.rb-grid li.rb-span-2,
+	.rb-grid li.rb-span-4 {
+		width: 100%;
+		height: 10em;
+		text-align: left;
+	}
+
+	.rb-grid li[class^="icon-"]:before,
+	.rb-grid li[class*=" icon-"]:before {
+		font-size: 6em;
+		left: auto;
+		right: 0;
+		line-height: 2.5;
+	}
+
+	.rb-grid li > div {
+		text-align: center;
+	}
+	.rb-grid li ,
+.rb-grid li  img {
+    display:block;
+	position: relative;
+	height:200px;
+	width:250px;
+}
+
+.rb-close::before {
+
+	content: 'x';
+	font-weight: 100;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-size: 3em;
+	line-height: 0.6;
+	text-indent: 0px;
+	
+	
+}
+.rb-overlay {
+	
+	top: 0;
+	left: 0;
+	
+
+}
+
+}
